@@ -1,0 +1,27 @@
+{
+  "name": "LeetCode Editorial",
+  "version": "1.0",
+  "description": "A Chrome extension to make LeetCode editoria better",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Action Button",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "author": {
+    "name": "dronz"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
